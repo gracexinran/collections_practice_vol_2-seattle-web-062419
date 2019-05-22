@@ -35,5 +35,9 @@ def remove_non_strings(array)
   array
 end
 
-def count_elements(array)
+def count_elements(hash)
+  result = {}
+  hash.each do |k, v|
+    if !result[k]
+      result[k]
   
