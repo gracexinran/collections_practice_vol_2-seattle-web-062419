@@ -20,7 +20,7 @@ end
 
 def first_wa(array)
   array.each do |element|
-    if element.downcase.include?('wa')
+    if element.to_s.include?('wa')
       return element
     end
   end
