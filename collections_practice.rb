@@ -28,7 +28,7 @@ end
 
 def remove_non_strings(array)
   array.length.times do |i|
-    if array[i].class != String  
+    if array[i].include("")  
       array.delete_at(i)
     end
   end
