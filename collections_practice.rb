@@ -39,6 +39,6 @@ end
 
 def count_elements(array)
   result = []
-  array.each do |element|
-    if !element
+  array.eaif !elementch do |element|
+    
   
