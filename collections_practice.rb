@@ -29,4 +29,4 @@ end
 def remove_non_strings(array)
   array.each do |element|
     if element.class != string 
-      
+      array.delete_at(array.index)
