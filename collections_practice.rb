@@ -55,7 +55,7 @@ def count_elements(array)
 end
 
 def merge_data(keys,data)
-  merged_data = {}
+  merged_data = []
   keys.length.times do |i|
     merged_data[keys[i]] = data[i]
   end
