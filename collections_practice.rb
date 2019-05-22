@@ -41,7 +41,7 @@ end
 def count_elements(array)
   result = [array[0]]
   array.length.times do |i|
-    result.each do |element|
+    result[1..result.length-1].each do |element|
       if element[:name] == array[i][:name]
         element[:count] += 1 
       else 
