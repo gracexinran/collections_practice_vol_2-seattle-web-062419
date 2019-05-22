@@ -42,7 +42,7 @@ def count_elements(array)
   result = []
   array.length.times do |i|
     result.each do |element|
-      if element[:name]
+      if element[:name] == array[i][:name]
         element[:count] += 1 
       else 
         result.push(array[i])
