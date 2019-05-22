@@ -33,7 +33,7 @@ def remove_non_strings(array)
       result << array[i]
     end
   end
-  array
+  result
 end
 
 # expect(count_elements([{:name => "blake"}, {:name => "blake"}, {:name => "ashley"}])).to eq([{:name => "blake", :count => 2}, {:name => "ashley", :count => 1}])
