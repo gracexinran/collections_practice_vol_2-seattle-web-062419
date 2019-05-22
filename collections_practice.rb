@@ -27,9 +27,10 @@ def first_wa(array)
 end
 
 def remove_non_strings(array)
+  result = []
   array.length.times do |i|
-    if !array[i].kind_of?(String)
-      array.delete_at(i)
+    if array[i].to_s == array[i]
+      result << array[i]
     end
   end
   array
