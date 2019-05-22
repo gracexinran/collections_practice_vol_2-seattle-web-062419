@@ -27,6 +27,13 @@ def first_wa(array)
 end
 
 def remove_non_strings(array)
-  array.each do |element|
-    if element.class != string 
-      array.delete_at(array.index)
+  array.length.times do |i|
+    if array[i].class != string 
+      array.delete_at(i)
+    end
+  end
+  array
+end
+
+def count_elements(array)
+  
