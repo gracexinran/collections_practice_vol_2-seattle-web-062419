@@ -39,6 +39,17 @@ end
 
 def count_elements(array)
   result = []
-  array.eaif !elementch do |element|
+  array.length.times do |i|
+    result.each do |element|
+      if element[:name]
+        element[:count] += 1 
+      else 
+        result.push(array[i])
+        element[:count] = 1 
+      end
+    end
+  end
+  result
+end
     
   
