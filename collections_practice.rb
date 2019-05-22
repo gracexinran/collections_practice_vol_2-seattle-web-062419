@@ -37,9 +37,9 @@ end
 
 # expect(count_elements([{:name => "blake"}, {:name => "blake"}, {:name => "ashley"}])).to eq([{:name => "blake", :count => 2}, {:name => "ashley", :count => 1}])
 
-def count_elements(hash)
-  result = {}
-  hash.each do |k, v|
+def count_elements(array)
+  result = []
+  array.each do ele
     if !result[k]
       result[k]
   
