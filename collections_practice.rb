@@ -46,7 +46,7 @@ def count_elements(array)
         element[:count] += 1 
       else 
         result.push(array[i])
-        element[:count] = 1 
+        result[result.index(array[i])][:count] = 1 
       end
     end
   end
