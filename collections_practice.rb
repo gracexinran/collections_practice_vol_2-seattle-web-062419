@@ -39,7 +39,7 @@ end
 # expect(count_elements([{:name => "blake"}, {:name => "blake"}, {:name => "ashley"}])).to eq([{:name => "blake", :count => 2}, {:name => "ashley", :count => 1}])
 
 def count_elements(array)
-  result = []
+  result = [array[0]]
   array.length.times do |i|
     result.each do |element|
       if element[:name] == array[i][:name]
