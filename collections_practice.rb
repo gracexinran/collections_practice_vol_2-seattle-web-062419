@@ -17,3 +17,11 @@ def contain_a(array)
   end
   result
 end
+
+def first_wa(array)
+  array.each do |element|
+    if element.downcase.include?('wa')
+      return element
+    end
+  end
+end
